@@ -1,5 +1,6 @@
 sub initParamsQuestClasse2 {
-	if (&eval($char->{jobID}) =~ /$paramsClasses{idC1}/) {
+	$idAtual = pegarID()
+	if (/$paramsClasses{idC1}/ =~ /$idAtual/) {
 		iconf 510 7 1 0 #ervaAzul
 		iconf 957 10 1 0 #unhaApodrecida
 		iconf 932 10 1 0 #osso
